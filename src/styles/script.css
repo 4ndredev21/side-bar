@@ -20,12 +20,44 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
+  height: 100vh;
+  border-radius: 0px 18px 18px 0px;
+}
+
+#sidebar_content {
+  padding: 0.9rem;
+}
+
+#user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.2rem;
 }
 
 #user_avatar {
-  width: 50px;
-  height: 50px;
+  width: 7rem;
+  height: 6rem;
   border-radius: 20px;
   object-fit: cover;
+}
+
+#user_infos {
+  display: flex;
+  flex-direction: column;
+}
+
+#user_infos span:last-child {
+  color: #6b6b6b;
+  font-size: 0.8rem;
+}
+
+#side_items {
+    
+    display: flex;
+    flex-direction: column;
+}
+.side_item {
+  list-style: none;
 }
