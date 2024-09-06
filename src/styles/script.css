@@ -57,7 +57,12 @@ main {
     
     display: flex;
     flex-direction: column;
+    gap: 8px;
+    list-style: none;
+
 }
 .side_item {
-  list-style: none;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
 }
