@@ -11,67 +11,64 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./src/styles/script.css" />
-    <title>Menu Lateral</title>
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <title>Barra Lateral</title>
   </head>
   <body>
     <nav id="sidebar">
       <div id="sidebar_content">
-        <div id="user">
+        <div id="profile_section">
           <img
-            id="user_avatar"
+            id="profile_image"
             src="./src/images/charizard_4ndredev21.jfif"
-            alt="charizard do treinador 4ndredev21"
+            alt="Profile Image"
           />
-
-          <p id="user_infos">
-            <span class="item_description"> CHARIDEV</span>
-            <span class="item_description"
-              >O pokémon preferido do treinador 4ndredev21 ,<br />
-              um dos mais fortes e habilidosos pokémons,<br />
-              tem ataques devastadores e também é muito resistente!</span
+          <div id="profile_info">
+            <span class="profile_name"> CHARIDEV</span>
+            <span class="profile_description"
+              >Treinador Pokémon especialista em batalhas.</span
             >
-          </p>
+          </div>
         </div>
-        <ul id="side_items">
-          <li class="side_item active">
+        <ul id="menu_items">
+          <li class="menu_item active">
             <a href="#"
               ><i class="fa-solid fa-chart-simple"></i>
-              <span class="item_description"> STATS </span></a
+              <span class="menu_text"> Estatísticas </span></a
             >
           </li>
-          <li class="side_item">
+          <li class="menu_item">
             <a href="#"
               ><i class="fa-solid fa-bolt"></i>
-              <span class="item_description"> HABILIDADES </span></a
+              <span class="menu_text"> Habilidades </span></a
             >
           </li>
-          <li class="side_item">
+          <li class="menu_item">
             <a href="#"
               ><i class="fa-solid fa-meteor"></i>
-              <span class="item_description"> MOVE TUTORS </span></a
+              <span class="menu_text"> Move Tutors </span></a
             >
           </li>
-          <li class="side_item">
+          <li class="menu_item">
             <a href="#"
               ><i class="fa-solid fa-heart-circle-minus"></i>
-              <span class="item_description"> AFINIDADE </span></a
+              <span class="menu_text"> Afinidade </span></a
             >
           </li>
         </ul>
-        <button id="open_btn">
-          <i id="open_btn_icon" class="fa-solid fa-circle-chevron-right"></i>
+        <button id="toggle_button">
+          <i id="toggle_icon" class="fa-solid fa-circle-chevron-right"></i>
         </button>
       </div>
-      <div id="logout">
-        <button id="logout_btn">
+      <div id="logout_section">
+        <button id="logout_button">
           <i class="fa-solid fa-right-from-bracket"></i>
-          <span id="item_description">LOGOUT</span>
+          <span id="logout_text">Logout</span>
         </button>
       </div>
     </nav>
     <main>
-      <h1>TITULO</h1>
+      <h1>Conteúdo Principal</h1>
     </main>
     <script src="./src/scripts/script.js"></script>
   </body>

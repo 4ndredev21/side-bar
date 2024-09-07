@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #e3e9f7;
+}
+
+main {
+  padding: 20px;
+  background-color: #dce2f1;
+  flex-grow: 1;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100px; /* Largura padrão quando recolhido */
+  border-radius: 0 18px 18px 0;
+  position: relative;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+#sidebar.open_sidebar {
+  width: 300px; /* Largura ao expandir */
+}
+
+#sidebar_content {
+  padding: 0.9rem;
+}
+
+#profile_section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+#profile_image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+#profile_info {
+  display: none;
+  flex-direction: column;
+}
+
+.open_sidebar #profile_info {
+  display: flex;
+}
+
+.menu_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.menu_item.active {
+  background-color: #4f46e5;
+  color: #fff;
+}
+
+.menu_item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+  font-weight: bold;
+}
+
+.menu_item i {
+  font-size: 1.5rem;
+}
+
+.menu_item span {
+  display: none; /* Esconde os textos no estado recolhido */
+}
+
+.open_sidebar .menu_item span {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+#toggle_button {
+  position: absolute;
+  top: 30px;
+  right: -25px; /* Ajusta a posição para garantir que esteja visível */
+  background-color: #4f46e5;
+  color: #e3e9f7;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 100; /* Garante que o botão esteja sempre acima de outros elementos */
+}
+
+#logout_section {
+  padding: 1rem;
+  border-top: 1px solid #e3e9f7;
+}
+#toggle_button {
+  position: absolute;
+  top: 30px;
+  right: -10px; /* Ajuste a posição para aparecer completamente */
+  width: 40px; /* Largura ajustada */
+  height: 40px; /* Altura ajustada */
+  background-color: #4f46e5;
+  color: #e3e9f7;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+}
+
+
+.menu_item:hover {
+  background-color: #e3e9f7;
+}
+
+.menu_item.active:hover {
+  background-color: #4f46e5; /* Mantém a cor do item ativo ao passar o mouse */
+}
+
+#logout_button:hover {
+  background-color: #e3e9f7;
+}
+
+
+#logout_button i {
+  font-size: 1.5rem;
+}
+
+#logout_button span {
+  display: none; /* Esconde o texto Logout no estado recolhido */
+}
+
+.open_sidebar #logout_button span {
+  display: inline-block;
+}
